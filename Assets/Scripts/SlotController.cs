@@ -16,12 +16,12 @@ public class SlotController : MonoBehaviour {
 
 	void OnMouseEnter()
 	{
-		transform.parent.GetComponent<InventoryController> ().selectedSlot = this.transform;
+		transform.parent.GetComponent<InventoryController> ()._selectedSlot = this.transform;
 	}
 
 	void OnMouseExit()
 	{
-		transform.parent.GetComponent<InventoryController> ().selectedSlot = null;
+		transform.parent.GetComponent<InventoryController> ()._selectedSlot = null;
 	}
 
 }
